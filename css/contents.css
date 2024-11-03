@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+#wrap {
+    /* background-color: red; */
+    width: 100%;
+    max-width: 100%;
+}
+h1 {
+    font-size: 28px;
+    color: #434343;
+    font-weight: 700;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #434343;
+}
+h4 {
+    font-size: 18px;
+    color: #898989;
+}
+
+
+
+.t_divider {
+    width: 384px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 25px auto;
+}
+.divider {
+    width: 184px;
+    height: 1.5px;
+    background-color: #aaaaaa;
+    margin: 20px auto;
+}
+.divider2 {
+    width: 1280px;
+    height: 1.5px;
+    background-color: #898989;
+    margin: 0 auto;
+}
+
+
+
+/* Title Image */
+.title_img {
+    /* 포지션 */
+    position: relative;
+}
+.title_img img {
+    /* width: 100%; */
+}
+.title_text {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+}
+.title_text h1 {
+    font-size: 52px;
+    color: #fff;
+    font-weight: 600;
+}
+.title_text .address {
+    /* 플렉스 */
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+}
+.title_text .address li {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 21px;
+}
+.title_text .address li:nth-child(1):hover {
+    color: #71CCDE;
+}
+.title_text .address li:nth-child(2):hover {
+    color: #71CCDE;
+}
+.title_text .address li:nth-child(3):hover {
+    color: #71CCDE;
+}
+.title_img span img {
+    margin-top: 150px;
+}
+
+
+
+
+/* SNS */
+.sns {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    /* 플렉스 */
+    display: flex;
+    /* 포지션 */
+    position: relative;
+    right: -1135px;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.sns p {
+    margin-top: 3px;
+    font-size: 13px;
+}
+.sns img {
+    margin-left: 15px;
+}
+
+
+
+/* Section01 */
+.room_guide h1, .divider+p {
+    text-align: center;
+}
+.room_guide .divider+p {
+    font-size: 14px;
+    color: #898989;
+    line-height: 2;
+    margin-bottom: 55px;
+}
+
+/* Slider */
+.slider img {
+    width: 100%;
+}
+
+/* Book */
+.book {
+    /* width: 100%; */
+    height: 100px;
+    background-color: #71CCDE;
+    /* 플렉스 */
+    display: flex;
+    padding: 20px 28px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.book .arrival, .deperture {
+    background-color: #fff;
+    width: 392px;
+    height: 60px;
+    margin-right: 24px;
+    padding: 18px 28px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.book p {
+    font-size: 18px;
+    color: #535353;
+}
+.book #a_date {
+    border-style: none;
+    font-size: 18px;
+}
+.book_button {
+    width: 392px;
+    height: 60px;
+    background-color: #4A8591;
+}
+.book_button:hover {
+    background-color: #2d5158;
+    transition: all 0.5s;
+}
+.book_button button {
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 0 15px 141px;
+    /* 플렉스 */
+    display: flex;
+    cursor: pointer;
+}
+.book_button button img {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+/* arrival & Deperture date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.date {
+    width: 200px;
+    border: 0;
+    outline: 0;
+    background: url("../images/contents/icon/schedule.png") no-repeat right center;
+    background-size: 20px 20px;
+}
+
+.deperture .date {
+    width: 180px;
+}
+
+/* Information */
+.info {
+    padding-left: 132px;
+}
+.info .table {
+    /* 플렉스 */
+    display: flex;
+}
+.info h3 {
+    margin-bottom: 30px;
+}
+table {
+    text-align: left;
+}
+table th, td {
+    padding-bottom: 15px;
+}
+table th {
+    font-size: 18px;
+    color: #515151;
+    width: 100px;
+}
+table td {
+    font-size: 16px;
+    color: #898989;
+}
+.info .table .check {
+    margin-right: 374px;
+}
+.benefit {
+    transform: translateY(-80px);
+}
+.benefit p {
+    font-size: 16px;
+    color: #898989;
+    line-height: 2.5;
+}
+
+
+
+
+/* Section02 */
+.amenity {
+    padding-left: 132px;
+    margin: 80px auto 120px;
+}
+.amenity h4 {
+    margin: 35px 0 25px;
+}
+.amenity p {
+    font-size: 16px;
+}
+.amenity ul li {
+    width: 184px;
+    height: 184px;
+    border: 2px solid #717171;
+    text-align: center;
+    margin-right: 24px;
+}
+.amenity ul li img {
+    margin-top: 55px;
+    /* height: 40px; */
+}
+.amenity ul li img+p {
+    margin-top: 30px;
+}
+
+.inroom_icon ul {
+    /* 플렉스 */
+    display: flex;
+}
+.bathroom_icon ul {
+    /* 플렉스 */
+    display: flex;
+}
+.option_icon ul {
+    /* 플렉스 */
+    display: flex;
+}
+.a_content {
+    background-color: rgba(74,133,145,0.9);
+    padding: 15px 0;
+    color: #fff;
+    line-height: 1.5;
+    display: none;
+}
+.add1 {
+    margin-top: 50px;
+}
+.add2 {
+    margin-top: 52px;
+}
+.add3 {
+    margin-top: 44px;
+}
+.add4 {
+    margin-top: 48px;
+}
+.add5 {
+    margin-top: 43px;
+}
+
+
+
+
+
+/* Section03 */
+.other_room {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.other_room h1 {
+    text-align: center;
+}
+.other_room .text {
+    width: 360px;
+    height: 190px;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    left: 0;
+    top: -190px;
+    cursor: pointer;
+}
+.other_room .text:hover {
+    background-color: rgba(74,133,145,0.9);
+    transition: all 0.5s;
+}
+.other_room .text p {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    padding: 40px 0 30px;
+    text-align: center;
+}
+.other_room .text button {
+    width: 162px;
+    height: 50px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 98px;
+    cursor: pointer;
+}
+.other_room .text:hover button {
+    background-color: #fff;
+    color: #434343;
+    transition: all 0.5s;
+}
+.other_room .room {
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 100px;
+    height: 610px;
+
+}
+
+
+

@@ -1,0 +1,26 @@
+<div class="container">
+    <p>Holiday Season Event</p>
+    <p><a href="#">자세히보기</a></p>
+    <p><img src="./images/close.png" alt="배너닫기"></p>
+</div>
+
+<script>
+    if($.cookie('aside')=='close'){
+        $('aside').stop().hide();
+        console.log('상단 사이드바를 닫으시면 10분 동안 보이지 않습니다.');
+    } else {
+        setTimeout(function(){
+        $("html, body").animate({ scrollTop: 0 }, "slow"); 
+        },700);
+    };
+
+    $('aside p').eq(-1).click(function(){
+    
+    $('aside').stop().slideUp(500);
+    
+    //cookie setting
+    var date = new Date();
+    date.setTime(date.getTime() + 10*60*1000); // 10분
+    $.cookie('aside', 'close', { expires: date, path : '/' });
+    });
+</script>

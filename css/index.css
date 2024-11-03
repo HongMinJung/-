@@ -1,0 +1,563 @@
+@charset "utf-8";
+/* index common */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    transform : rotate(0.04deg);
+}
+
+h2+div.line {
+    width: 58px;
+    height: 2px;
+    margin: 28px auto 0;
+    background: #999;
+}
+
+img[src$='.svg'] {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    /* 버튼숨기기 */
+    display: none;
+}
+
+#wrap {
+    min-width : 1280px;
+}
+
+/* title */
+.title {
+    height: 900px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.title p {
+    padding-top: 252px;
+    font-size: 24px;
+    transform : rotate(0.04deg);
+    /* font-weight: 300; */
+    letter-spacing: -0.05em;
+}
+
+.title h2 {
+    margin-top: 40px;
+    font-size: 52px;
+    font-weight: 500;
+    transform : rotate(0.04deg);
+}
+
+
+
+/* rooms */
+.rooms {
+    height: 704px;
+    background: url('../images/index/room_background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.rooms h2 {
+    padding-top: 100px;
+    color: #fff;
+}
+.rooms .line {
+    margin-bottom: 60px;
+}
+
+.rooms .swiper-container {
+    max-width: 1140px;
+}
+
+.rooms .room_list li{
+    width: 271px;
+    height: 378px;
+    background: #111;
+    overflow: hidden;
+    /* 위치기준값 */
+    position: relative;
+}
+
+.rooms .room_list li img {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.rooms .room_list li:hover img {
+    opacity: 1;
+}
+
+.rooms .room_list .room_text {
+    display: block;
+    width: 271px;
+    height: 148px;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    /* 포지션 */
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.rooms .room_list .room_text h3 {
+    margin-top: 36px;
+    font-size: 22px;
+    font-weight: 500;
+    transform : rotate(0.04deg); 
+}
+
+.rooms .room_list .room_text a {
+    display: inline-block;
+    margin-top: 24px;
+    width: 124px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    transform : rotate(0.04deg);
+    transition: all 0.5s;
+}
+
+.rooms .room_list .room_text a:hover {
+    background: #fff;
+    color: #242424;
+}
+
+/* 화살표 */
+.room_list {
+    /* 위치기준 값*/
+    position: relative;
+}
+
+
+/* facilities */
+.facilities {
+    height: 1020px;
+    padding-top: 100px;
+}
+
+.facilities .container {
+    margin-top: 60px;
+    /* 플렉스 */
+    display: flex;
+}
+
+.facilities .facilities_contents {
+    width: 640px;
+}
+
+.facilities .facilities_contents ul {
+    /* 플렉스 */
+    display: flex;
+}
+
+.facilities .facilities_contents ul li {
+    margin: 40px 0 0 52px;
+}
+
+.facilities .facilities_contents ul li:first-child {
+    margin-left: 12px;
+}
+
+.facilities .facilities_contents ul li label {
+    font-size: 18px;
+    transform : rotate(0.04deg);
+    cursor: pointer;
+    /* 위치기준값 */
+    position:relative;
+}
+
+.facilities .facilities_contents ul li label:hover {
+    color: #71ccde;
+}
+
+.facilities .facilities_contents label::after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #71ccde;
+    transition: all 0.5s;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    z-index: 1;
+}
+
+.facilities .facilities_contents label:hover::after {
+    width: 100%;
+}
+
+.facilities .facilities_contents div{
+    /* 체크된 텍스트박스만 보이도록 */
+    display: none;
+}
+
+.facilities .facilities_contents h3 {
+    margin-left: 12px;
+    margin-top: 152px;
+    font-size: 60px;
+    transform : rotate(0.04deg);
+}
+
+.facilities .facilities_contents p {
+    margin: 48px 0 0 12px;
+    line-height: 2;
+    transform : rotate(0.04deg);
+}
+
+.facilities .facilities_contents p+a {
+    margin: 68px 0 0 12px;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    transform : rotate(0.04deg);
+    transition: all 0.5s;
+}
+
+.facilities .facilities_contents p+a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.facilities .facilities_contents+div {
+    width: 620px;
+    height: 610px;
+    border: 1px solid #71ccde;
+    /* 위치기준값 */
+    position: relative;
+}
+
+.facilities .facilities_contents+div img {
+    /* 이미지 가리기 */
+    opacity: 0;
+    transition: all 1s;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+/* 체크되었을시 효과 / 이미지나오기 */
+
+/* 체크 되었을 시 컬러/밑줄 */
+input[id="list01"]:checked~.facilities_contents label[for="list01"] {
+    color: #71ccde;
+}
+input[id="list01"]:checked~.facilities_contents label[for="list01"]::after {
+    width: 100%;
+}
+input[id="list02"]:checked~.facilities_contents label[for="list02"] {
+    color: #71ccde;
+}
+input[id="list02"]:checked~.facilities_contents label[for="list02"]::after {
+    width: 100%;
+}
+input[id="list03"]:checked~.facilities_contents label[for="list03"] {
+    color: #71ccde;
+}
+input[id="list03"]:checked~.facilities_contents label[for="list03"]::after {
+    width: 100%;
+}
+input[id="list04"]:checked~.facilities_contents label[for="list04"] {
+    color: #71ccde;
+}
+input[id="list04"]:checked~.facilities_contents label[for="list04"]::after {
+    width: 100%;
+}
+
+/* 체크 되었을 시 이미지 보이기 */
+input[id="list01"]:checked~.facilities_contents+div img:nth-child(1) {
+    opacity: 1;
+}
+input[id="list02"]:checked~.facilities_contents+div img:nth-child(2) {
+    opacity: 1;
+}
+input[id="list03"]:checked~.facilities_contents+div img:nth-child(3) {
+    opacity: 1;
+}
+input[id="list04"]:checked~.facilities_contents+div img:nth-child(4) {
+    opacity: 1;
+}
+
+/* 체크 되었을 시 텍스트 보이기 */
+input[id="list01"]:checked~.facilities_contents div.fitness_text {
+    display: block;
+}
+input[id="list02"]:checked~.facilities_contents div.spa_text {
+    display: block;
+}
+input[id="list03"]:checked~.facilities_contents div.forest_text {
+    display: block;
+}
+input[id="list04"]:checked~.facilities_contents div.rooptop_text {
+    display: block;
+}
+
+/* special_offers */
+.special_offers {
+    height: 840px;
+    background: url('../images/index/special_background.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.special_offers:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 840px;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.special_offers h2 {
+    padding-top: 100px;
+    color: #fff;
+    /* text-shadow: 1px 0 8px #333, 0 1px 8px #333, -1px 0 8px #333, 0 -1px 8px #333; */
+}
+
+.offers_select {
+    padding-top: 60px;
+    width: 484px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.offers_select div {
+    width: 140px;
+    height: 100px;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    background: #dfdfdf;
+    cursor: pointer;
+}
+
+.offers_select label:nth-child(2) div {
+    width: 144px;
+    border-left: 2px solid #a4a4a4;
+    border-right: 2px solid #a4a4a4;
+}
+
+.offers_select div h5 {
+    margin-top: 12px;
+    transform : rotate(0.04deg);
+}
+
+.offers_box {
+    height: 400px;
+    background: #fff;
+    /* 플렉스 */
+    display: flex;
+}
+
+.offers_box .offers_text {
+    margin-top: 76px;
+    margin-left: 40px;
+}
+
+.offers_box .offers_text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    transform : rotate(0.04deg);
+    letter-spacing: -0.05em;
+}
+
+.offers_box .offers_text p {
+    margin-top: 16px;
+    transform : rotate(0.04deg);
+    letter-spacing: -0.05em;
+    color: #666;
+    line-height: 2;
+}
+
+.offers_box .offers_text a {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    transform : rotate(0.04deg);
+    margin-top: 48px;
+    transition: all 0.5s;
+}
+
+.offers_box .offers_text a:hover {
+    border: 1px solid #333;
+    background: #333;
+    color: #fff;
+}
+
+.offers_text {
+    /* 처음엔 안보이게 */
+    display: none;
+}
+
+.offers_box div:first-child {
+    width: 510px;
+    height: 400px;
+    /* 위치기준값 */
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.offers_box div:first-child img {
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* special_offers check 효과주기 */
+input[id="offers1"]:checked~.offers_select label[for="offers1"] div {
+    background: #fff;
+    color: #333;
+}
+input[id="offers1"]:checked~.offers_select label[for="offers1"] div h5 {
+    font-weight: 700;
+}
+input[id="offers2"]:checked~.offers_select label[for="offers2"] div {
+    background: #fff;
+    color: #333;
+}
+input[id="offers2"]:checked~.offers_select label[for="offers2"] div h5 {
+    font-weight: 700;
+}
+input[id="offers3"]:checked~.offers_select label[for="offers3"] div {
+    background: #fff;
+    color: #333;
+}
+input[id="offers3"]:checked~.offers_select label[for="offers3"] div h5 {
+    font-weight: 700;
+}
+
+/* 소개 텍스트 보이기 */
+input[id="offers1"]:checked~.offers_box .offers_text:nth-child(2) {
+    display: block;
+}
+input[id="offers2"]:checked~.offers_box .offers_text:nth-child(3) {
+    display: block;
+}
+input[id="offers3"]:checked~.offers_box .offers_text:nth-child(4) {
+    display: block;
+}
+
+/* 이미지 보이기 */
+input[id="offers1"]:checked~.offers_box div:first-child img:nth-child(1) { opacity: 1;}
+input[id="offers2"]:checked~.offers_box div:first-child img:nth-child(2) { opacity: 1;}
+input[id="offers3"]:checked~.offers_box div:first-child img:nth-child(3) { opacity: 1;}
+
+
+
+/* event */
+.event {
+    height: 860px;
+}
+
+.event h2 {
+    margin-top: 100px;
+    transform : rotate(0.04deg);
+}
+
+.event h5 {
+    margin-top: 24px;
+    font-size: 22px;
+    font-weight: 500;
+    transform : rotate(0.04deg);
+}
+
+.event h5:hover {
+    font-weight: 700;
+}
+
+.event .img_box {
+    display: block;
+    width: 360px;
+    height: 290px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.event .img_box img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.event .img_box:hover img {
+    transform: scale(1.2);
+}
+
+.event time {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
+    transform : rotate(0.04deg);
+}
+
+.event .swiper-container {
+    margin-top: 46px;
+    max-width: 1140px;
+}
+
+/* 화살표 */
+.event .container {
+    /* 위치기준값 */
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.event span:nth-child(2) img{
+    position:absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-150%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.event span:nth-child(3) img{
+    position:absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-150%);
+    z-index: 1;
+    cursor: pointer;
+}

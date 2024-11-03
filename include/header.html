@@ -1,0 +1,102 @@
+<div class="container">
+    <!-- logo -->
+    <h1><a href="./index.html"><img src="./images/logo.png" alt="투엘브호텔리조트 로고"></a></h1>
+    <!-- /logo -->
+    <!-- gnb -->
+    <ul class="gnb">
+        <li>
+            <a href="./prePage.html">WELCOME</a>
+            <div class="two_depth">
+                <span></span>
+                <ul>
+                    <li><a href="./aboutTwelve.html">ABOUT&nbsp;TWELVE</a></li>
+                    <li><a href="./prePage.html">RESERVATION</a></li>
+                    <li><a href="./prePage.html">GALLERY</a></li>
+                    <li><a href="./prePage.html">LOCATION</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="./prePage.html">SPECIAL&nbsp;OFFERS</a>
+            <div class="two_depth">
+                <span></span>
+                <ul>
+                    <li><a href="./prePage.html">Restaurant</a></li>
+                    <li><a href="./prePage.html">PLAY&nbsp;KIDZ</a></li>
+                    <li><a href="./prePage.html">GOOD&nbsp;SLEEP</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="./sub.html">ROOMS</a>
+            <div class="two_depth">
+                <span></span>
+                <ul>
+                    <li><a href="./prePage.html">SINGLE</a></li>
+                    <li><a href="./contents.html">DOUBLE&nbsp;1</a></li>
+                    <li><a href="./prePage.html">DOUBLE&nbsp;2</a></li>
+                    <li><a href="./prePage.html">DELUXE</a></li>
+                    <li><a href="./prePage.html">SUITE</a></li>
+                    <li><a href="./prePage.html">ROYAL</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="./prePage.html">DINING</a>
+            <div class="two_depth">
+                <span></span>
+                <ul>
+                    <li><a href="./prePage.html">KOREAN&nbsp;RESTAURANT</a></li>
+                    <li><a href="./prePage.html">CHINESE&nbsp;RESTAURANT</a></li>
+                    <li><a href="./prePage.html">BUFFET</a></li>
+                    <li><a href="./prePage.html">DRIVE&nbsp;THROUGH</a></li>
+                    <li><a href="./prePage.html">TWELVE&nbsp;BAR</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="./prePage.html">FACILITIES</a>
+            <div class="two_depth">
+                <span></span>
+                <ul>
+                    <li><a href="./prePage.html">FITNESS</a></li>
+                    <li><a href="./prePage.html">SPA</a></li>
+                    <li><a href="./prePage.html">FOREST&nbsp;PARK</a></li>
+                    <li><a href="./prePage.html">ROOFTOP&nbsp;GARDEN</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- /gnb -->
+    <!-- submenu -->
+    <ul class="submenu">
+        <li><a href="./prePage.html">예약하기</a></li>
+        <li><a href="./prePage.html">로그인</a></li>
+        <li><a href="./prePage.html">예약확인</a></li>
+        <li><a href="./prePage.html">멤버십</a></li>
+    </ul>
+    <!-- /submenu -->
+</div>
+
+
+<script>
+    // gnb show
+    $('.gnb>li>a').mouseenter(function(){
+        $(this).siblings('.two_depth').stop().css('visibility','visible');
+        $(this).siblings('.two_depth').children('span').stop().css('width','50%');
+    });
+    $('.gnb>li').mouseleave(function(){
+        $(this).children('.two_depth').stop().css('visibility','hidden');
+        $(this).children('.two_depth').children('span').stop().css('width','0.1%');
+    });
+
+    $('.two_depth').mouseenter(function(){
+        $(this).stop().css('visibility','visible');
+        $(this).children('span').stop().stop().css('width','50%');
+    });
+
+    $('.two_depth').mouseleave(function(){
+        $(this).stop().css('visibility','hidden');
+        $(this).children('span').stop().css('width','0.1%');
+    });
+</script>

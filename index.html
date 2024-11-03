@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="OSTB">
+    <meta name="description" content="OSTB portfolio">
+    <title>TWELVE HOTEL&amp;RESERT</title>
+    <meta property="og:image" content="./images/favicon/twelve_favicon_180.png">
+    <meta property="og:title" content="TWELVE HOTEL&amp;RESERT">
+    <meta property="og:description" content="지친 당신에게 힐링이 필요할땐,">
+    <meta property="og:url" content="http://patrick415.dothome.co.kr/twelve/index.html">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="TWELVE HOTEL&amp;RESERT">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut Icon" href="./images/favicon/twelveFavicon180.png">
+  <link rel="apple-touch-icon=precomposed" href="./images/favicon/twelveFav180.png">
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]--> 
+    <!--[if lt IE 9]><script src="./js/PIE.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/respond.js"></script><![endif]-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <!-- 쿠키 플러그인 -->
+    <script src="./js/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CND.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- module -->
+    <link rel="stylesheet" href="./css/module.css">
+    <!-- index -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <!-- slide -->
+    <link rel="stylesheet" href="./css/slide.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. aside -->
+        <aside></aside>
+        <!-- 1. /aside -->
+        <!-- 2. header -->
+        <header></header>
+        <!-- /2. header -->
+        <!-- 3. title -->
+        <section class="title">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="checkbox" name="play" id="playbutton">
+            <div class="title_bgi">
+                <ul>
+                    <li>
+                        <p>지친 당신에게 힐링이 필요할 땐,</p>
+                        <h2>TWELVE HOTEL &amp; RESORT</h2>
+                    </li>
+                    <li>
+                        <p>지루한 일상에서 벗어나고 싶을 땐,</p>
+                        <h2>TWELVE HOTEL &amp; RESORT</h2>
+                    </li>
+                    <li>
+                        <p>바쁜 도시 속 특별한 여유를 갖고 싶을 땐,</p>
+                        <h2>TWELVE HOTEL &amp; RESORT</h2>
+                    </li>
+                </ul>
+            </div>
+            <span><img src="./images/arrow.png" alt="아래로 스크롤"></span>
+            <ul class="pager">
+                <li><label for="slide01"></label></li>
+                <li><label for="slide02"></label></li>
+                <li><label for="slide03"></label></li>
+                <li><label for="playbutton" onclick="slideStop();"></label></li>
+            </ul>
+        </section>
+        <!-- /3. title -->
+        <main role="main">
+            <!-- 4. section_rooms -->
+            <section class="rooms">
+                <h2>ROOMS</h2>
+                <div class="line"></div>
+                <div class="room_list container">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_single.jpg" alt="싱글룸">
+                                <span class="room_text">
+                                    <h3>SINGLE</h3>
+                                    <a href="#">자세히보기</a>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_double1.jpg" alt="더블1룸">
+                                <span class="room_text">
+                                    <h3>DOUBLE 1</h3>
+                                    <a href="./contents.html">자세히보기</a>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_double2.jpg" alt="더블2룸">
+                                <span class="room_text">
+                                    <h3>DOUBLE 2</h3>
+                                    <a href="#">자세히보기</a>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_deluxe.jpg" alt="디럭스룸">
+                                <span class="room_text">
+                                    <h3>DELUXE</h3>
+                                    <a href="#">자세히보기</a>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_sutie.jpg" alt="스위트룸">
+                                <span class="room_text">
+                                    <h3>SUITE</h3>
+                                    <a href="#">자세히보기</a>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/index/room_royal.jpg" alt="로얄룸">
+                                <span class="room_text">
+                                    <h3>ROYAL</h3>
+                                    <a href="#">자세히보기</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 스와이퍼 좌우 화살표 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- /스와이퍼 좌우 화살표 -->
+                </div>
+            </section>
+            <!-- /4. section_rooms -->
+            <!-- 5. section_facilities -->
+            <section class="facilities">
+                <h2>FACILITIES</h2>
+                <div class="line"></div>
+                <div class="container">
+                    <input type="radio" name="facilities_list" id="list01" checked>
+                    <input type="radio" name="facilities_list" id="list02">
+                    <input type="radio" name="facilities_list" id="list03">
+                    <input type="radio" name="facilities_list" id="list04">
+                    <div class="facilities_contents">
+                        <ul>
+                            <li><label for="list01">FITNESS</label></li>
+                            <li><label for="list02">SPA</label></li>
+                            <li><label for="list03">FOREST&nbsp;PARK</label></li>
+                            <li><label for="list04">ROOFTOP&nbsp;GARDEN</label></li>
+                        </ul>
+                        <div class="fitness_text">
+                            <h3>FITNESS</h3>
+                            <p>
+                                최신 시설을 갖추고 있는 투엘브 피트니스 센터에서,<br>
+                                다양한 운동 프로그램을 통해 건강한 삶을 만들 수 있습니다
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                        <div class="spa_text">
+                            <h3>SPA</h3>
+                            <p>
+                                도심 속에서 즐기는 진정한 휴식!<br>
+                                효과적인 휴식공간이 될 수 있도록 여러 스파시설을 제공합니다
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                        <div class="forest_text">
+                            <h3>FOREST&nbsp;PARK</h3>
+                            <p>
+                                투웰브에서만 만나볼 수 있는 특별한 포레스트파크<br>
+                                지금 포레스트파크에서 숨쉬는 자연의 풍경을 느껴보세요!
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                        <div class="rooptop_text">
+                            <h3>ROOFTOP&nbsp;GARDEN</h3>
+                            <p>
+                                투엘브 루프탑 가든은 옥상에 위치합니다<br>
+                                탁 트인 전망을 감상하며 색다른 루프탑 파티를 즐겨보세요!
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/index/fitness.jpg" alt="피트니스">
+                        <img src="./images/index/spa.jpg" alt="스파">
+                        <img src="./images/index/forest.jpg" alt="포레스트">
+                        <img src="./images/index/rooftop.jpg" alt="루프탑">
+                    </div>
+                </div>
+            </section>
+            <!-- /5. section_facilities -->
+            <!-- 6. section_special_offers -->
+            <section class="special_offers">
+                <h2>SPECIAL&nbsp;OFFERS</h2>
+                <div class="line"></div>
+                <input type="radio" name="offers" id="offers1" checked>
+                <input type="radio" name="offers" id="offers2">
+                <input type="radio" name="offers" id="offers3">
+                <div class="offers_select">
+                    <label for="offers1"><div><img src="./svg/restaurant.svg" alt="레스토랑"><h5>Restaurant</h5></div></label>
+                    <label for="offers2"><div><img src="./svg/playkidz.svg" alt="플레이키즈존"><h5>PLAY KIDZ</h5></div></label>
+                    <label for="offers3"><div><img src="./svg/goodsleep.svg" alt="굿슬립"><h5>GOOD SLEEP</h5></div></label>
+                </div>
+                <div class="offers_box container">
+                    <div>
+                        <img src="./images/index/restaurant.jpg" alt="레스토랑">
+                        <img src="./images/index/playkidz.jpg" alt="플레이키즈존">
+                        <img src="./images/index/goodsleep.jpg" alt="굿슬립">
+                    </div>
+                    <div class="offers_text">
+                        <h3>Restaurant</h3>
+                        <p>
+                            도심의 전경을 한눈에 감상하며 식사를 즐길 수 있습니다.<br>
+                            최고의 재룔로 정성스럽게 준비 된 식사와,<br>
+                            눈과 입이 즐거운 디저트까지 다채로운 메뉴가 준비되어있습니다.<br>
+                            투엘브 레스토랑에서 색다른 미식 여행을 떠나보세요.
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
+                    <div class="offers_text">
+                        <h3>PLAY&nbsp;KIDZ</h3>
+                        <p>
+                            아이들의 신체 성장과 발달을 돕는 놀이시설과 프리미엄 교구로 채워진 플레이키즈룸을 제공합니다.<br>
+                            영아부터 초등저학년 어린이까지 이용하실 수 있습니다.<br>
+                            아이들에겐 즐거운 놀이를, 부모님들에게는 휴식시간을 마련해 줄 수 있습니다.<br>
+                            또한, 해당 패키지를 구매하시면 어린이들을 위한 키즈 어메니티와 쿠키를 증정합니다.
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
+                    <div class="offers_text">
+                        <h3>GOOD&nbsp;SLEEP</h3>
+                        <p>
+                            숙면에 예민한 손님들을 위해, 꿀잠 패키지를 구성하고 있습니다.<br>
+                            해당 패키지를 구매하시면, 고급소재의 파자마 세트와 꿀잠키드를 제공합니다.<br>
+                            객실에 프리미엄 침구를 구비하고, 숙면 프로그램을 통해 자신에게 맞는 배게를 선택하실 수 있습니다.<br>
+                            레이트 체크아웃으로 오후 1시에 체크아웃을 할 수 있어 여유로움을 느끼실 수 있습니다. 
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="event">
+                <h2>EVENT</h2>
+                <div class="line"></div>
+                <div class="container">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <span class="img_box">
+                                    <a href="#"><img src="./images/index/event_holiday.jpg" alt="미니바만들기이벤트"></a>
+                                </span>
+                                <h5><a href="#">Holiday Season Event</a></h5>
+                                <time datetime="P2021-09-23">2024.12.01 ~ 2024.12.31</time>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="img_box">
+                                    <a href="#"><img src="./images/index/event_minibar.jpg" alt="미니바만들기이벤트"></a>
+                                </span>
+                                <h5><a href="#">나만의 미니바 만들기</a></h5>
+                                <time datetime="P2021-09-23">2024.09.01 ~ 2024.09.23</time>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="img_box">
+                                    <a href="#"><img src="./images/index/event_green.jpg" alt="그린투엘브캠페인"></a>
+                                </span>
+                                <h5><a href="#">Green TWELVE Campaign</a></h5>
+                                <time datetime="P2021-12-31">2024.10.01 ~ 2024.12.31</time>
+                            </li>
+                            <li class="swiper-slide">
+                                <span class="img_box">
+                                    <a href="#"><img src="./images/index/event_point.jpg" alt="8월추가적립포인트"></a>
+                                </span>
+                                <h5><a href="#">8월 적립포인트 50% 추가</a></h5>
+                                <time datetime="P2021-08-31">2024.08.01 ~ 2024.08.31</time>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="event_prev"><img src="./svg/left_arrow.svg" alt="왼쪽화살표"></span>
+                    <span class="event_next"><img src="./svg/right_arrow.svg" alt="오른쪽화살표"></span>
+                </div>
+            </section>
+            <!-- /6. section_special_offers -->
+        </main>
+        <!-- 7. footer -->
+        <footer></footer>
+        <!-- /7. footer -->
+    </div>
+</body>
+<!-- index_js -->
+<!-- module -->
+<script>
+    $('body').append("<div class='alert'><img src='./images/alert.png' alt='준비중 알림창'></img></div>");
+
+    $('aside').load('./include/aside.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+    $('header').load('./include/header.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+    $('footer').load('./include/footer.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+</script>
+<script src="./js/twelve_index.js"></script>
+</html>

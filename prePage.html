@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="OSTB">
+    <meta name="description" content="OSTB portfolio">
+    <title>TWELVE HOTEL&amp;RESERT</title>
+    <meta property="og:image" content="./images/favicon/twelve_favicon_180.png">
+    <meta property="og:title" content="TWELVE HOTEL&RESERT">
+    <meta property="og:description" content="지친 당신에게 힐링이 필요할땐,">
+    <meta property="og:url" content="http://patrick415.dothome.co.kr/twelve/prePage.html">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="TWELVE HOTEL&RESERT">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut Icon" href="./images/favicon/twelveFavicon180.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/twelveFav180.png">
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]--> 
+    <!--[if lt IE 9]><script src="./js/PIE.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/respond.js"></script><![endif]-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <!-- cookie plugin -->
+    <script src="./js/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CND.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- module -->
+    <link rel="stylesheet" href="./css/module.css">
+    <!-- page css -->
+    <link rel="stylesheet" href="./css/pre_page.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- aside -->
+        <aside></aside>
+        <!-- /aside -->
+        <!-- header -->
+        <header></header>
+        <!-- /header -->
+        <!-- pre_page -->
+        <div class="pre_page">
+            <h2>
+                SORRY : (
+            </h2>
+            <p>페이지 준비중입니다. (404 ERROR)</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">홈으로</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /pre_page -->
+        <!-- footer -->
+        <footer></footer>
+        <!-- /footer -->
+    </div>
+</body>
+<!-- index_js -->
+<script src="./js/twelve_index.js"></script>
+<!-- module -->
+<script>
+    $('body').append("<div class='alert'><img src='./images/alert.png' alt='준비중 알림창'></img></div>");
+
+    $('aside').load('./include/aside.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+    $('header').load('./include/header.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+    $('footer').load('./include/footer.html',function(){
+        $('a[href="#"]').click(function(e){
+        e.preventDefault();
+        $('.alert').stop().fadeIn(700);
+
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(700);
+        },3000);
+        });
+    });
+</script>
+</html>
